@@ -30,6 +30,9 @@
     <ClCompile Include="binary_matrix.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="goe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="euclid.h">
@@ -42,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="tools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="goe.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

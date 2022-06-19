@@ -1,18 +1,19 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include"matrix.h"
+#include"binary_matrix.h"
+#define SIZE 8
+#define DOMAIN 2
 int main() {
-	int** m = (int**)malloc(3 * sizeof(int*));
+	int** m = (int**)malloc(SIZE * sizeof(int*));
 	int i;
-	for (i = 0; i < 3; i++) {
-		m[i] = (int*)malloc(3 * sizeof(int));
+	for (i = 0; i < SIZE; i++) {
+		m[i] = (int*)malloc(SIZE * sizeof(int));
 	}
-	int a = 2, b = 1;
-	swap(&a, &b);
-	inputMatrix(m, 3, 3);
-	printf("矩阵的秩是：%d\n", getRank(m, 3, 31));
-	printf("行列式为%d\n", getDeterminant(m, 3, 31));
+	inputBinaryMatrix(m, SIZE, SIZE);
+	printf("矩阵的秩是：%d\n", getBinaryRank(m, SIZE));
+	printf("行列式为%d\n", getBinaryDeterminant(m, SIZE));
 	printf("矩阵的逆：\n");
-	outputMatrix(inverseMatrix(m, 3, 31), 3, 3);
+	outputBinaryMatrix(inverseBinaryMatrix(m, SIZE), SIZE, SIZE);
 	return 0;
 }

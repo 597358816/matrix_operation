@@ -225,13 +225,13 @@ int getRank(int** matrix, int size, int domain) {
 			//如果阶梯元素为0
 			for (another_row = row + 1; another_row < size; another_row++) {
 				//找不为0的那一行进行交换
-				if (m[another_row][row] != 0) {
+				if (m[another_row][line] != 0) {
 					break;
 				}
 			}
 			if (another_row != size) {
 				//找到后进行交换
-				for (i = row; i < size; i++) {
+				for (i = line; i < size; i++) {
 					swap(&m[row][i], &m[another_row][i]);
 				}
 			}
