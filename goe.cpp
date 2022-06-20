@@ -85,6 +85,16 @@ GOETreeBinary* createGOETree(int* rules, GOETreeBinary* node, StateNode* head, G
 	if (judge == 0) {
 		//空块返回
 		//输出路径
+		GOETreeBinary* p = node;
+		while (p->father) {
+			if (p = p->father->son[0]) {
+				printf("0");
+			}
+			else if (p = p->father->son[1]) {
+				printf("1");
+			}
+			p = p->father;
+		}
 	}
 
 	//如果与已知状态相同，则不创建树，什么也不做

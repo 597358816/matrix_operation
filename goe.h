@@ -27,7 +27,7 @@ struct GOEQueue {
 GOETreeBinary* initGOENode();
 int recordConfiguration(int* configuration, StateNode* head);
 GOETreeBinary* createGOERoot(int* rules, StateNode* head);
-GOETreeBinary* createGOETree(int* rules, GOETreeBinary* node, StateNode* head, GOEQueue* stack);
+GOETreeBinary* createGOETree(int* rules, GOETreeBinary* node, StateNode* head, GOEQueue* queue);
 
 GOEQueue* initGOEQueue(GOETreeBinary* elem)
 {
